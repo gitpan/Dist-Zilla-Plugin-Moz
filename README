@@ -1,0 +1,47 @@
+NAME
+VERSION
+    version 0.101 Dist::Zilla::Plugin::Moz - Dist::Zilla plugin for your
+    firefox addons development
+
+SYNOPSIS
+    in your dist.ini
+
+        [Moz]
+        id                  = appUniqName@example.com
+        contributor         = some contributors
+        type                = 2
+        maxVersion          = 11.*
+        minVersion          = 0.3
+        useJAR              = 1
+        [Moz::Manifest]
+        overlay = xx => xxx
+        style = xx => xxx
+        [Moz::InstallRDF]
+        optionsURL = content/options.xul
+        [Moz::Archive]
+        [Moz::Install]
+        extDir = /home/yourid/.mozilla/firefox/8ywcrpsn.default/extensions/
+
+DESCRIPTION
+    Dist::Zilla::Plugin::Moz is created for firefox addons developement. It
+    can do those work for you.
+
+    create addons template
+    generate install.rdf
+    generate chrome.manifest
+    build addons arvhive
+    install addons
+
+  useJAR
+    Setting useJAR in this section will pack the content into a $name.jar
+    and make correspond changes in chrome.manifest
+
+AUTHOR
+    woosley.xu <woosley.xu@gmail.com>
+
+COYPRIGHT
+    his software is copyright (c) 2012 by woosley.xu.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
