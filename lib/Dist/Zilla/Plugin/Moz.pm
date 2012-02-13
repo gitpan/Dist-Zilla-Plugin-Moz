@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz;
 {
-  $Dist::Zilla::Plugin::Moz::VERSION = '0.102';
+  $Dist::Zilla::Plugin::Moz::VERSION = '0.103';
 }
 
 # ABSTRACT: Dist::Zilla plugin for firefox development
@@ -9,6 +9,7 @@ use Moose::Autobox;
 use MooseX::Types::Email qw/EmailAddress/;
 use Moose::Util::TypeConstraints;
 use Archive::Zip;
+use File::Spec;
 use Path::Class;
 use Dist::Zilla::File::InMemory;
 with 'Dist::Zilla::Role::FileGatherer';
@@ -51,8 +52,10 @@ sub gather_files {
         my @files = $self->zilla->files->flatten;
         for my $distfile (@files) {
             if (dir("chrome")->subsumes($distfile->name)) {
-                $archive->addString($distfile->content, $distfile->name . "");
                 $self->zilla->prune_file($distfile);
+                my @dirs = File::Spec->splitdir($distfile->name);
+                shift @dirs;
+                $archive->addString($distfile->content, file(@dirs). "");
             }
 
         }
@@ -78,7 +81,7 @@ Dist::Zilla::Plugin::Moz - Dist::Zilla plugin for your firefox addons developmen
 
 =head1 VERSION
 
-version 0.102
+version 0.103
 
 =head1 SYNOPSIS
 

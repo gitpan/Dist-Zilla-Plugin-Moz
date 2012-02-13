@@ -1,6 +1,6 @@
 package Dist::Zilla::App::Command::mozi;
 {
-  $Dist::Zilla::App::Command::mozi::VERSION = '0.102';
+  $Dist::Zilla::App::Command::mozi::VERSION = '0.103';
 }
 use warnings;
 use strict;
@@ -60,7 +60,7 @@ Dist::Zilla::App::Command::mozi - install your addons to firefox profile for tes
 
 =head1 VERSION
 
-version 0.102
+version 0.103
 
 =head1 SYNOPSIS
 

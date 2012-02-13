@@ -1,6 +1,6 @@
 package Dist::Zilla::MintingProfile::Moz;
 {
-  $Dist::Zilla::MintingProfile::Moz::VERSION = '0.102';
+  $Dist::Zilla::MintingProfile::Moz::VERSION = '0.103';
 }
 
 use Moose;
@@ -20,7 +20,7 @@ __END__
 
 =head1 VERSION
 
-version 0.102
+version 0.103
 Dist::Zilla::MintingProfile::Moz - minting profile provider for Mozilla
 addons development
 

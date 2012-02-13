@@ -1,0 +1,7 @@
+-v0.103 
+    fix install.rdf bug
+    fix bug when generate .jar file
+-v0.102 
+    update perldoc
+-v0.101
+    first release

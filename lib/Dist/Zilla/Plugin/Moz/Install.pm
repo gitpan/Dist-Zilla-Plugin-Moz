@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz::Install;
 {
-  $Dist::Zilla::Plugin::Moz::Install::VERSION = '0.102';
+  $Dist::Zilla::Plugin::Moz::Install::VERSION = '0.103';
 }
 use Moose;
 use Carp qw/croak/;
@@ -37,7 +37,7 @@ Dist::Zilla::Plugin::Moz::Install
 
 =head1 VERSION
 
-version 0.102
+version 0.103
 
 =head1 SYNOPSIS
 

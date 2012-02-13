@@ -22,4 +22,4 @@ requires:
   Template::Declare: 0
 resources:
   repository: http://github.com/woosley/Dist-Zilla-Plugin-Moz.git
-version: 0.102
+version: 0.103

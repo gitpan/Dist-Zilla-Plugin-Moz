@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     "MooseX::Types::Email" => 0,
     "Template::Declare" => 0
   },
-  "VERSION" => "0.102",
+  "VERSION" => "0.103",
   "test" => {
     "TESTS" => "t/*.t"
   }

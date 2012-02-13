@@ -31,6 +31,7 @@ $tzil->build;
 my $content = $tzil->slurp_file("build/install.rdf");
 
 cmp_ok("$content\n", "eq", <<'EOF');
+<?xml version="1.0" encoding="UTF-8"?>
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
  <Description about="urn:mozilla:install-manifest">
