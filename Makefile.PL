@@ -27,9 +27,10 @@ my %WriteMakefileArgs = (
     "Dist::Zilla" => "4.300006",
     "Moose::Autobox" => 0,
     "MooseX::Types" => 0,
+    "MooseX::Types::Email" => 0,
     "Template::Declare" => 0
   },
-  "VERSION" => "0.101",
+  "VERSION" => "0.102",
   "test" => {
     "TESTS" => "t/*.t"
   }

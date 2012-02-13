@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz::Manifest;
 {
-  $Dist::Zilla::Plugin::Moz::Manifest::VERSION = '0.101';
+  $Dist::Zilla::Plugin::Moz::Manifest::VERSION = '0.102';
 }
 use Moose;
 use File::Spec::Functions;
@@ -85,7 +85,7 @@ Dist::Zilla::Plugin::Moz::Manifest
 
 =head1 VERSION
 
-version 0.101
+version 0.102
 
 =head1 SYNOPSIS
 

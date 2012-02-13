@@ -1,7 +1,9 @@
 NAME
+    Dist::Zilla::Plugin::Moz - Dist::Zilla plugin for your firefox addons
+    development
+
 VERSION
-    version 0.101 Dist::Zilla::Plugin::Moz - Dist::Zilla plugin for your
-    firefox addons development
+    version 0.102
 
 SYNOPSIS
     in your dist.ini

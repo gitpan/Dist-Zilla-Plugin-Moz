@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz::InstallRDF;
 {
-  $Dist::Zilla::Plugin::Moz::InstallRDF::VERSION = '0.101';
+  $Dist::Zilla::Plugin::Moz::InstallRDF::VERSION = '0.102';
 }
 use Moose;
 use Template::Declare;
@@ -61,7 +61,7 @@ __PACKAGE__->meta->make_immutable;
 
 package Dist::Zilla::Plugin::Moz::InstallRDF::Template;
 {
-  $Dist::Zilla::Plugin::Moz::InstallRDF::Template::VERSION = '0.101';
+  $Dist::Zilla::Plugin::Moz::InstallRDF::Template::VERSION = '0.102';
 }
 use Template::Declare::Tags 'RDF::EM' => {namespace => 'em'}, 'RDF';
 use base 'Template::Declare';
@@ -120,7 +120,7 @@ Dist::Zilla::Plugin::Moz::InstallRDF
 
 =head1 VERSION
 
-version 0.101
+version 0.102
 
 =head1 SYNOPSIS
     

@@ -5,7 +5,7 @@ copyright_holder = woosley.xu
 copyright_year   = 2012
 main_module = lib/Dist/Zilla/Plugin/Moz.pm
 
-version = 0.102
+version = 0.101
 [ModuleShareDirs]
 Dist::Zilla::MintingProfile::Moz = profiles
 [@Filter]

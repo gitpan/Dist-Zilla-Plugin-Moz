@@ -4,9 +4,12 @@ META.yml
 Makefile.PL
 README
 dist.ini
+dist.ini~
 lib/Dist/Zilla/App/Command/mozi.pm
 lib/Dist/Zilla/MintingProfile/Moz.pm
+lib/Dist/Zilla/MintingProfile/Moz.pm~
 lib/Dist/Zilla/Plugin/Moz.pm
+lib/Dist/Zilla/Plugin/Moz.pm~
 lib/Dist/Zilla/Plugin/Moz/Archive.pm
 lib/Dist/Zilla/Plugin/Moz/Install.pm
 lib/Dist/Zilla/Plugin/Moz/InstallRDF.pm

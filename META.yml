@@ -18,7 +18,8 @@ requires:
   Dist::Zilla: 4.300006
   Moose::Autobox: 0
   MooseX::Types: 0
+  MooseX::Types::Email: 0
   Template::Declare: 0
 resources:
   repository: http://github.com/woosley/Dist-Zilla-Plugin-Moz.git
-version: 0.101
+version: 0.102
