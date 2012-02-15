@@ -3,7 +3,7 @@ NAME
     development
 
 VERSION
-    version 0.103
+    version 0.104
 
 SYNOPSIS
     in your dist.ini
@@ -16,8 +16,8 @@ SYNOPSIS
         minVersion          = 0.3
         useJAR              = 1
         [Moz::Manifest]
-        overlay = xx => xxx
-        style = xx => xxx
+        overlay =  /browser/content/browser.xul /content/status-overlay.xul
+        style   =  /global/content/customizeToolbar.xul     /skin/overlay.css
         [Moz::InstallRDF]
         optionsURL = content/options.xul
         [Moz::Archive]
@@ -29,14 +29,34 @@ DESCRIPTION
     can do those work for you.
 
     create addons template
-    generate install.rdf
-    generate chrome.manifest
-    build addons arvhive
-    install addons
+        ship Dist::Zilla::MintingProfile::Moz when you use 'dzil new -P Moz
+        -p moz'
 
-  useJAR
-    Setting useJAR in this section will pack the content into a $name.jar
-    and make correspond changes in chrome.manifest
+    generate install.rdf
+        see Dist::Zilla::Plugin::Moz::InstallRDF
+
+    generate chrome.manifest
+        see Dist::Zilla::Plugin::Moz::Manifest
+
+    build addons arvhive
+        see Dist::Zilla::Plugin::Moz::Archive
+
+    install addons
+        see Dist::Zilla::Plugin::Moz::Install
+
+SETTINGS
+    id  This is a uniq id for your addons, you should set is as an email
+        form.
+
+    type
+        default to 2
+
+    contributor
+    minVersion
+    maxVersion
+    useJAR
+        setting useJAR in this section will pack the content into a
+        $name.jar and make correspond changes in chrome.manifest
 
 AUTHOR
     woosley.xu <woosley.xu@gmail.com>

@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz::Archive;
 {
-  $Dist::Zilla::Plugin::Moz::Archive::VERSION = '0.103';
+  $Dist::Zilla::Plugin::Moz::Archive::VERSION = '0.104';
 }
 
 # ABSTRACT: generate .xpi for your dist
@@ -73,7 +73,7 @@ Dist::Zilla::Plugin::Moz::Archive
 
 =head1 VERSION
 
-version 0.103
+version 0.104
 
 =head1 SYNOPSIS
 

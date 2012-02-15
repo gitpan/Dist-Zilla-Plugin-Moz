@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz;
 {
-  $Dist::Zilla::Plugin::Moz::VERSION = '0.103';
+  $Dist::Zilla::Plugin::Moz::VERSION = '0.104';
 }
 
 # ABSTRACT: Dist::Zilla plugin for firefox development
@@ -81,7 +81,7 @@ Dist::Zilla::Plugin::Moz - Dist::Zilla plugin for your firefox addons developmen
 
 =head1 VERSION
 
-version 0.103
+version 0.104
 
 =head1 SYNOPSIS
 
@@ -95,8 +95,8 @@ in your dist.ini
     minVersion          = 0.3
     useJAR              = 1
     [Moz::Manifest]
-    overlay = xx => xxx
-    style = xx => xxx
+    overlay =  /browser/content/browser.xul /content/status-overlay.xul
+    style   =  /global/content/customizeToolbar.xul     /skin/overlay.css
     [Moz::InstallRDF]
     optionsURL = content/options.xul
     [Moz::Archive]
@@ -113,20 +113,51 @@ can do those work for you.
 
 =item create addons template
 
+ship L<Dist::Zilla::MintingProfile::Moz> when you use 'dzil new -P Moz
+-p moz'
+
 =item generate install.rdf
+
+see L<Dist::Zilla::Plugin::Moz::InstallRDF>
 
 =item generate chrome.manifest
 
+see L<Dist::Zilla::Plugin::Moz::Manifest>
+
 =item build addons arvhive
+
+see L<Dist::Zilla::Plugin::Moz::Archive>
 
 =item install addons
 
+see L<Dist::Zilla::Plugin::Moz::Install>
+
 =back
 
-=head2 useJAR
+=head1 SETTINGS 
 
-Setting useJAR in this section will pack the content into a $name.jar and
+=over 
+
+=item id
+
+This is a uniq id for your addons, you should set is as an email form.
+
+=item type 
+
+default to 2
+
+=item contributor
+
+=item minVersion
+
+=item maxVersion
+
+=item useJAR
+
+setting useJAR in this section will pack the content into a $name.jar and
 make correspond changes in chrome.manifest
+
+=back
 
 =head1 AUTHOR
 

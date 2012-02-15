@@ -4,9 +4,7 @@ META.yml
 Makefile.PL
 README
 changes
-changes~
 dist.ini
-dist.ini~
 lib/Dist/Zilla/App/Command/mozi.pm
 lib/Dist/Zilla/MintingProfile/Moz.pm
 lib/Dist/Zilla/Plugin/Moz.pm

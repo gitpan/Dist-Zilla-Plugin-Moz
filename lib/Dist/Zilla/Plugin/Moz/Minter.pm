@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::Moz::Minter;
 {
-  $Dist::Zilla::Plugin::Moz::Minter::VERSION = '0.103';
+  $Dist::Zilla::Plugin::Moz::Minter::VERSION = '0.104';
 }
 
 # ABSTRACT: Default "minter" for Moz.pm
@@ -28,7 +28,7 @@ Dist::Zilla::Plugin::Moz::Minter - Minter for DZIL::P::Moz
 
 =head1 VERSION
 
-version 0.103
+version 0.104
 
 =head1 SYNOPSIS
 
